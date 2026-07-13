@@ -1,0 +1,2 @@
+# 清空显存缓存，确保干净的显存状态
+torch.cuda.empty_cache()
