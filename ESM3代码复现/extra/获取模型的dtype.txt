@@ -1,0 +1,8 @@
+"""
+model.parameters() 返回一个迭代器，包含了模型中所有可训练的参数（权重和偏置）
+
+next() 从该迭代器中取出第一个参数
+只用取第一个参数因为模型所有的参数通常在同一个设备且为相同的数据类型
+"""
+
+print(f"模型 dtype: {next(model.parameters()).dtype}, 设备: {device}")

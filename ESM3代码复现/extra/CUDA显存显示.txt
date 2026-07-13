@@ -1,0 +1,2 @@
+if device.type == "cuda":
+    print(f"推理后显存: {torch.cuda.memory_allocated()/1024**3:.2f} GB")
